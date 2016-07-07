@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Blog</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<header>
+		<h1><%=title %></h1>
+	</header>
+	<nav>
+		<span><a title="homepage" href="/">Home</a></span>
+		<% if (user) { %>
+		<span><a title="Post" href="/post">Post</a></span>
+		<span><a title="Logout" href="/logout">Logout</a></span>
+		<% } else { %>
+		<span><a title="login" href="/login">Login</a></span>
+		<span><a title="register" href="/reg">Register</a></span>
+		<% } %>
+	</nav>
+	<article>
+	<% if(success!='') { %>
+		<div><%= success %></div>
+	<% } else if(error!='') { %>
+		<div><%= error %></div>
+	<% } %>

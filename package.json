@@ -1,0 +1,16 @@
+{
+  "name": "express_demo",
+  "description": "express framework app",
+  "version": "0.1.0",
+  "dependencies": {
+    "body-parser": "1.15.x",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^1.2.0",
+    "cookie-parser": "1.4.x",
+    "ejs": "^2.4.2",
+    "express": "4.x",
+    "express-session": "^1.13.0",
+    "mongodb": "1.4.x",
+    "morgan": "1.7.x"
+  }
+}
